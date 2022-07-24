@@ -27,8 +27,8 @@ write.table(df1,"analysis_yanarhsf3_2/yanarhs_f3_analysis2_ch1.ind",quote=F,col.
 #write.table(df1,"analysis_yanarhsf3_2/yanarhs_f3_analysis2_vindija.ind",quote=F,col.names=F,row.names=F)
 #write.table(df1,"analysis_yanarhsf3_2/yanarhs_f3_analysis2_denisova.ind",quote=F,col.names=F,row.names=F)
 
-out <- file("yanarhs_f3_analysis_ch1.geno","w")
-out2 <- file("yanarhs_f3_analysis_ch1.snp","w")
+out <- file("analysis_yanarhsf3_2/yanarhs_f3_analysis_ch1.geno","w")
+out2 <- file("analysis_yanarhsf3_2/yanarhs_f3_analysis_ch1.snp","w")
 set.seed(123)
 start.time<-proc.time()
 
