@@ -32,12 +32,12 @@ out2 <- file("analysis_yanarhsf3_2/yanarhs_f3_analysis_ch1.snp","w")
 set.seed(123)
 start.time<-proc.time()
 
-for(chrnum in 1:22){
+for(chrnum in 1){
   
   if(chrnum < 10){
-    f <- file(sprintf("yana_merged0%s.txt",chrnum),"r")
+    f <- file(sprintf("analysis_yanarhsf3_2/yana_merged0%s.txt",chrnum),"r")
   }else{
-    f <- file(sprintf("yana_merged%s.txt",chrnum),"r")
+    f <- file(sprintf("analysis_yanarhsf3_2/yana_merged%s.txt",chrnum),"r")
   }
   
   repeat{
