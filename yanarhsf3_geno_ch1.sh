@@ -11,7 +11,7 @@
 #$ -e ~/hmiwa/log/yanarhsf3_geno_ch1.e
 echo "####  ch1 copy job ####"
 echo "start: `date`"
-gunzip -c ~/hmiwa/analysis_yanarhsf3/yanarhsf3/yana_merged01.txt.bz2 > ~/hmiwa/analysis_yanarhsf3_2/yana_merged01.txt;echo "copy done `date`"
+bzip2 -d -k ~/hmiwa/analysis_yanarhsf3/yanarhsf3/yana_merged01.txt.bz2 > ~/hmiwa/analysis_yanarhsf3_2/yana_merged01.txt;echo "copy done `date`"
 echo "finish: `date`"
 echo "####  make genofile job ####"
 echo "start: `date`"
