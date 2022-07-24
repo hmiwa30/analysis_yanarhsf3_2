@@ -21,4 +21,4 @@ echo "####  ch1 bzip job ####"
 echo "start: `date`"
 bzip2 ~/hmiwa/analysis_yanarhsf3_2/yana_merged01.txt;echo "bzip2 done `date`"
 echo "finish: `date`"
-#please do "qsub" under ~/hmiwa/analysis_yanarhsf3_2
+#please do "qsub" under ~/hmiwa 
