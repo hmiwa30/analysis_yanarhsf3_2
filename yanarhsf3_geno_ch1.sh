@@ -11,7 +11,7 @@
 #$ -e ~/hmiwa/log/yanarhsf3_geno_ch1.e
 echo "####  ch1 copy job ####"
 echo "start: `date`"
-bzip2 -d -k ~/hmiwa/analysis_yanarhsf3/yanarhsf3/yana_merged01.txt.bz2 > ~/hmiwa/analysis_yanarhsf3_2/yana_merged01.txt;echo "copy done `date`"
+bzip2 -d -c -k /lustre7/home/hmiwa-spc/hmiwa/analysis_yanarhsf3/yanarhsf3/yana_merged01.txt.bz2 > /lustre7/home/hmiwa-spc/hmiwa/analysis_yanarhsf3_2/yana_merged01.txt;echo "copy done `date`"
 echo "finish: `date`"
 echo "####  make genofile job ####"
 echo "start: `date`"
@@ -19,6 +19,6 @@ echo "start: `date`"
 echo "finish: `date`"
 echo "####  ch1 bzip job ####"
 echo "start: `date`"
-bzip2 ~/hmiwa/analysis_yanarhsf3_2/yana_merged01.txt;echo "bzip2 done `date`"
+bzip2 /lustre7/home/hmiwa-spc/hmiwa/analysis_yanarhsf3_2/yana_merged01.txt;echo "bzip2 done `date`"
 echo "finish: `date`"
 #please do "qsub" under ~/hmiwa 
