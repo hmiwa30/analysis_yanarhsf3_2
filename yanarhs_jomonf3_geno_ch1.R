@@ -10,7 +10,7 @@ test_sum <- append(test_sum,c("Jomon","IK002.maf001_Jomon","JpFu1","JpKo13","JpH
 test_pop <- append(test_pop,c("Jomon","IK002.maf001_Jomon","JpFu1","JpKo13","JpHi01","JpKo2","JpIw31","JpOd181","JpIw32","JpOd274","JpIw33","JpOd282","JpKa6904","JpOd6"))
 df1 <- data.frame(v1=test_sum,v2="U",v3=test_pop)
 
-write.table(df1,"analysis_yanarhsf3_2/yana_j_f3_analysis_ch1.ind",quote=F,col.names=F,row.names=F)
+write.table(df1,"analysis_yanarhsf3_2/results/yana_j_f3_analysis_ch1.ind",quote=F,col.names=F,row.names=F)
 #write.table(df1,"analysis_yanarhsf3_2/yana_j_f3_analysis_altai.ind",quote=F,col.names=F,row.names=F)
 #write.table(df1,"analysis_yanarhsf3_2/yana_j_f3_analysis_chagyrskaya.ind",quote=F,col.names=F,row.names=F)
 #write.table(df1,"analysis_yanarhsf3_2/yana_j_f3_analysis_vindija.ind",quote=F,col.names=F,row.names=F)
@@ -26,23 +26,23 @@ test_sum <- append(test_sum,c("Jomon","IK002.maf001_Jomon","JpFu1","JpKo13","JpH
 test_pop <- append(test_pop,c("Jomon","Jomon","Jomon","Jomon","Jomon","Jomon","Kofun","Jomon","Kofun","Jomon","Kofun","Jomon","Jomon","Jomon"))
 df1 <- data.frame(v1=test_sum,v2="U",v3=test_pop)
 
-write.table(df1,"analysis_yanarhsf3_2/yana_j_f3_analysis2_ch1.ind",quote=F,col.names=F,row.names=F)
+write.table(df1,"analysis_yanarhsf3_2/results/yana_j_f3_analysis2_ch1.ind",quote=F,col.names=F,row.names=F)
 #write.table(df1,"analysis_yanarhsf3_2/yana_j_f3_analysis2_altai.ind",quote=F,col.names=F,row.names=F)
 #write.table(df1,"analysis_yanarhsf3_2/yana_j_f3_analysis2_chagyrskaya.ind",quote=F,col.names=F,row.names=F)
 #write.table(df1,"analysis_yanarhsf3_2/yana_j_f3_analysis2_vindija.ind",quote=F,col.names=F,row.names=F)
 #write.table(df1,"analysis_yanarhsf3_2/yana_j_f3_analysis2_denisova.ind",quote=F,col.names=F,row.names=F)
 
-out <- file("analysis_yanarhsf3_2/yana_j_f3_analysis_ch1.geno","w")
-out2 <- file("analysis_yanarhsf3_2/yana_j_f3_analysis_ch1.snp","w")
+out <- file("analysis_yanarhsf3_2/results/yana_j_f3_analysis_ch1.geno","w")
+out2 <- file("analysis_yanarhsf3_2/results/yana_j_f3_analysis_ch1.snp","w")
 set.seed(123)
 start.time<-proc.time()
 
 for(chrnum in 1){
   
   if(chrnum < 10){
-    f <- file(sprintf("analysis_yanarhsf3_2/yana_j_merged0%s.txt",chrnum),"r")
+    f <- file(sprintf("analysis_yanarhsf3_2/results/yana_j_merged0%s.txt",chrnum),"r")
   }else{
-    f <- file(sprintf("analysis_yanarhsf3_2/yana_j_merged%s.txt",chrnum),"r")
+    f <- file(sprintf("analysis_yanarhsf3_2/results/yana_j_merged%s.txt",chrnum),"r")
   }
   
   repeat{
