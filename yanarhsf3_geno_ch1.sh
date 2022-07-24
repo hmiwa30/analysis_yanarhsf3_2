@@ -9,6 +9,7 @@
 #$ -S /bin/bash
 #$ -o ~/hmiwa/log/yanarhsf3_geno_ch1.o
 #$ -e ~/hmiwa/log/yanarhsf3_geno_ch1.e
+#$ -N yanach1geno
 echo "####  ch1 copy job ####"
 echo "start: `date`"
 bzip2 -d -c -k /lustre7/home/hmiwa-spc/hmiwa/analysis_yanarhsf3/yanarhsf3/yana_merged01.txt.bz2 > /lustre7/home/hmiwa-spc/hmiwa/analysis_yanarhsf3_2/yana_merged01.txt;echo "copy done `date`"
