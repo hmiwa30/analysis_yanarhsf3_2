@@ -8,7 +8,7 @@ test_pop <- as.vector(pops$V7[-c(1)])
 test_pop <- append(test_pop,as.character(pop_yana$V1))
 df1 <- data.frame(v1=test_sum,v2="U",v3=test_pop)
 
-write.table(df1,"analysis_yanarhsf3_2/yanarhs_f3_analysis_ch1.ind",quote=F,col.names=F,row.names=F)
+write.table(df1,"analysis_yanarhsf3_2/results/yanarhs_f3_analysis_ch1.ind",quote=F,col.names=F,row.names=F)
 #write.table(df1,"analysis_yanarhsf3_2/yanarhs_f3_analysis_altai.ind",quote=F,col.names=F,row.names=F)
 #write.table(df1,"analysis_yanarhsf3_2/yanarhs_f3_analysis_chagyrskaya.ind",quote=F,col.names=F,row.names=F)
 #write.table(df1,"analysis_yanarhsf3_2/yanarhs_f3_analysis_vindija.ind",quote=F,col.names=F,row.names=F)
@@ -21,23 +21,23 @@ test_pop <- as.vector(pops$V7[-c(1)])
 test_pop <- append(test_pop,as.character(pop_yana$V2))
 df1 <- data.frame(v1=test_sum,v2="U",v3=test_pop)
 
-write.table(df1,"analysis_yanarhsf3_2/yanarhs_f3_analysis2_ch1.ind",quote=F,col.names=F,row.names=F)
+write.table(df1,"analysis_yanarhsf3_2/results/yanarhs_f3_analysis2_ch1.ind",quote=F,col.names=F,row.names=F)
 #write.table(df1,"analysis_yanarhsf3_2/yanarhs_f3_analysis2_altai.ind",quote=F,col.names=F,row.names=F)
 #write.table(df1,"analysis_yanarhsf3_2/yanarhs_f3_analysis2_chagyrskaya.ind",quote=F,col.names=F,row.names=F)
 #write.table(df1,"analysis_yanarhsf3_2/yanarhs_f3_analysis2_vindija.ind",quote=F,col.names=F,row.names=F)
 #write.table(df1,"analysis_yanarhsf3_2/yanarhs_f3_analysis2_denisova.ind",quote=F,col.names=F,row.names=F)
 
-out <- file("analysis_yanarhsf3_2/yanarhs_f3_analysis_ch1.geno","w")
-out2 <- file("analysis_yanarhsf3_2/yanarhs_f3_analysis_ch1.snp","w")
+out <- file("analysis_yanarhsf3_2/results/yanarhs_f3_analysis_ch1.geno","w")
+out2 <- file("analysis_yanarhsf3_2/results/yanarhs_f3_analysis_ch1.snp","w")
 set.seed(123)
 start.time<-proc.time()
 
 for(chrnum in 1){
   
   if(chrnum < 10){
-    f <- file(sprintf("analysis_yanarhsf3_2/yana_merged0%s.txt",chrnum),"r")
+    f <- file(sprintf("analysis_yanarhsf3_2/results/yana_merged0%s.txt",chrnum),"r")
   }else{
-    f <- file(sprintf("analysis_yanarhsf3_2/yana_merged%s.txt",chrnum),"r")
+    f <- file(sprintf("analysis_yanarhsf3_2/results/yana_merged%s.txt",chrnum),"r")
   }
   
   repeat{
