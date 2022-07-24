@@ -1,0 +1,5 @@
+cd hmiwa/analysis_yanarhsf3_2
+git init
+git remote add origin git@github.com:hmiwa30/analysis_yanarhsf3_2.git
+git pull origin HEAD:main
+#README.md in this directory!
