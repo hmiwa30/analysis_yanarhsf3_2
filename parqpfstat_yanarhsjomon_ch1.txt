@@ -4,7 +4,7 @@
    indivname:                analysis_yanarhsf3_2/results/yana_j_f3_analysis.ind
      snpname:                 analysis_yanarhsf3_2/results/yana_j_f3_analysis.snp
 genotypename:                analysis_yanarhsf3_2/results/yana_j_f3_analysis.geno
- poplistname:                      analysis_yanarhsf3_2/lista2_yanajomon.txt
+ poplistname:                      analysis_yanarhsf3_2/lista_yanajomon.txt
 ## must be present.  ne popuation / line.  First population is base
  fstatsoutname:                    analysis_yanarhsf3_2/results/yana_j_f3_analysis_fstatsa.txt 
 ## first line is header.  Must be retained
