@@ -8,7 +8,7 @@
 #$ -S /bin/bash
 #$ -o ~/hmiwa/log/yanarhs_fstats_yanarhsjomon_ch1.o
 #$ -e ~/hmiwa/log/yanarhs_fstats_yanarhsjomon_ch1.e
-#$ -N paryanach1
+#$ -N par2yanach1
 echo "####f3 analysis job####"
 echo "start : `date` "
 singularity exec /usr/local/biotools/a/admixtools:7.0.2--h767d0c5_0 qpfstats -p ~/hmiwa/analysis_yanarhsf3_2/parqpfstat_yanarhsjomon_ch1.txt > ~/hmiwa/analysis_yanarhsf3/results/qpfstatlog_yanarhsjomon_ch1.txt;echo "qpfstats done: `date`"
