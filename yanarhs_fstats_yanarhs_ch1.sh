@@ -6,8 +6,8 @@
 #$ -l s_vmem=256G
 #$ -l mem_req=256G
 #$ -S /bin/bash
-#$ -o ~/hmiwa/log/yanarhs_fstats_ch1.o
-#$ -e ~/hmiwa/log/yanarhs_fstats_ch1.e
+#$ -o ~/hmiwa/log/yanarhs_fstats_yanarhs_ch1.o
+#$ -e ~/hmiwa/log/yanarhs_fstats_yanarhs_ch1.e
 #$ -N paryanach1
 echo "####f3 analysis job####"
 echo "start : `date` "
