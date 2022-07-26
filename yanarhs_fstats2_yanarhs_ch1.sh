@@ -11,6 +11,6 @@
 #$ -N par2yanach1
 echo "####f3 analysis job####"
 echo "start : `date` "
-singularity exec /usr/local/biotools/a/admixtools:7.0.2--h767d0c5_0 qpfstats -p ~/hmiwa/analysis_yanarhsf3_2/parqpfstat2_yanarhs_ch1.txt > ~/hmiwa/analysis_yanarhsf3/results/qpfstatlog2_yanarhs_ch1.txt;echo "qpfstats done: `date`"
+singularity exec /usr/local/biotools/a/admixtools:7.0.2--h767d0c5_0 qpfstats -p ~/hmiwa/analysis_yanarhsf3_2/parqpfstat2_yanarhs_ch1.txt > ~/hmiwa/analysis_yanarhsf3_2/results/qpfstatlog2_yanarhs_ch1.txt;echo "qpfstats done: `date`"
 echo "finish : `date`"
 #please do "qsub" under ~/hmiwa
