@@ -1,9 +1,9 @@
          DIR:                 analysis_yanarhsf3_2/results/
           S1:                     analysis_yanarhsf3_2/results/
          S1X:                     analysis_yanarhsf3_2/results/
-   indivname:                analysis_yanarhsf3_2/results/yanarhs_f3_analysis.ind
-     snpname:                 analysis_yanarhsf3_2/results/yanarhs_f3_analysis.snp
-genotypename:                analysis_yanarhsf3_2/results/yanarhs_f3_analysis.geno
+   indivname:                analysis_yanarhsf3_2/results/yanarhs_f3_analysis_ch1.ind
+     snpname:                 analysis_yanarhsf3_2/results/yanarhs_f3_analysis_ch1.snp
+genotypename:                analysis_yanarhsf3_2/results/yanarhs_f3_analysis_ch1.geno
  poplistname:                      analysis_yanarhsf3_2/lista_yana.txt
 ## must be present.  ne popuation / line.  First population is base
  fstatsoutname:                    analysis_yanarhsf3_2/results/yanarhs_f3_analysis_fstatsa.txt 
