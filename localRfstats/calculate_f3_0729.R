@@ -15,9 +15,21 @@ library(admixtools)
 
 sdir="G:\\hmiwa\\m_20211215\\07_yana_saami3\\git\\analysis_yanarhsf3_2\\localRfstats\\sources"
 rdir="G:\\hmiwa\\m_20211215\\07_yana_saami3\\git\analysis_yanarhsf3_2\\localRfstats\\results"
+ldir="G:\\hmiwa\\m_20211215\\07_yana_saami3\\git\\analysis_yanarhsf3_2"
 
-prefix = sprintf("%s\\yana_j_f3_analysis_ch1",sdir)
+#prefix = sprintf("%s\\yana_j_f3_analysis_ch1",sdir)
+#my_f2_dir = sprintf("%s\\yana_j_f3_analysis_ch1",rdir)
+#extract_f2(prefix, my_f2_dir)
+#Out of Memory !
 
+sdir="G:\\hmiwa\\m_20211215\\07_yana_saami3\\git\\analysis_yanarhsf3\\localRfstats\\sources"
+rdir="G:\\hmiwa\\m_20211215\\07_yana_saami3\\git\analysis_yanarhsf3\\localRfstats\\results"
+ldir="G:\\hmiwa\\m_20211215\\07_yana_saami3\\git\\analysis_yanarhsf3"
+
+prefix = sprintf("%s\\yana_j_f3_analysis_denisova",sdir)
+my_f2_dir = sprintf("%s\\yana_j_f3_analysis_denisova",rdir)
+extract_f2(prefix, my_f2_dir)
+#Out of Memory !
 
 
 #prefix = sprintf("G:\\hmiwa\\m_20211215\\07_yana_saami3\\git\\analysis_yanarhsf3_2\\localRfstats\\sources",ah)
