@@ -1,6 +1,6 @@
-
-.libPaths("C:\\Users\\himar\\Documents\\R")
 .libPaths()
+.libPaths("C:\\Users\\himar\\Documents\\R")
+
 #install.packages("shiny")
 #install.packages("shinythemes")
 #install.packages("shinyjs")
@@ -12,6 +12,11 @@
 #install.packages("DT")
 #install.packages("jquerylib")
 library(admixtools)
+
+sdir="G:\\hmiwa\\m_20211215\\07_yana_saami3\\git\\analysis_yanarhsf3_2\\localRfstats\\sources"
+
+
+
 
 
 #prefix = sprintf("G:\\hmiwa\\m_20211215\\07_yana_saami3\\git\\analysis_yanarhsf3_2\\localRfstats\\sources",ah)
@@ -25,3 +30,5 @@ library(admixtools)
 #(pop3 = as.character(lista[-1]))
 #dat.f3=f3(f2_blocks,pop1,pop2,pop3)
 #write.table(dat.f3,sprintf("G:\\hmiwa\\m_20211215\\05_jomonf3\\Results\\f3_FIN_%s.txt",ah),quote=F,row.names=F)
+
+
