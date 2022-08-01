@@ -14,8 +14,9 @@
 library(admixtools)
 
 sdir="G:\\hmiwa\\m_20211215\\07_yana_saami3\\git\\analysis_yanarhsf3_2\\localRfstats\\sources"
+rdir="G:\\hmiwa\\m_20211215\\07_yana_saami3\\git\analysis_yanarhsf3_2\\localRfstats\\results"
 
-
+prefix = sprintf("%s\\yana_j_f3_analysis_ch1",sdir)
 
 
 
