@@ -1,32 +1,3 @@
-pops <- read.csv("downloads/1KG/1000G.p3.name.csv",header=F)
-pop_yana <- read.table("analysis_yanarhsf3/samplelist.txt",header=F,sep=",")
-
-#sample,sample
-test_sum <- as.vector(pops$V1[-c(1)])
-test_sum <- append(test_sum,as.character(pop_yana$V1))
-test_pop <- as.vector(pops$V7[-c(1)])
-test_pop <- append(test_pop,as.character(pop_yana$V1))
-df1 <- data.frame(v1=test_sum,v2="U",v3=test_pop)
-
-write.table(df1,"analysis_yanarhsf3_2/results/yanarhs_f3_analysis_ch1.ind",quote=F,col.names=F,row.names=F)
-#write.table(df1,"analysis_yanarhsf3_2/yanarhs_f3_analysis_altai.ind",quote=F,col.names=F,row.names=F)
-#write.table(df1,"analysis_yanarhsf3_2/yanarhs_f3_analysis_chagyrskaya.ind",quote=F,col.names=F,row.names=F)
-#write.table(df1,"analysis_yanarhsf3_2/yanarhs_f3_analysis_vindija.ind",quote=F,col.names=F,row.names=F)
-#write.table(df1,"analysis_yanarhsf3_2/yanarhs_f3_analysis_denisova.ind",quote=F,col.names=F,row.names=F)
-
-#sample,group
-test_sum <- as.vector(pops$V1[-c(1)])
-test_sum <- append(test_sum,as.character(pop_yana$V1))
-test_pop <- as.vector(pops$V7[-c(1)])
-test_pop <- append(test_pop,as.character(pop_yana$V2))
-df1 <- data.frame(v1=test_sum,v2="U",v3=test_pop)
-
-write.table(df1,"analysis_yanarhsf3_2/results/yanarhs_f3_analysis2_ch1.ind",quote=F,col.names=F,row.names=F)
-#write.table(df1,"analysis_yanarhsf3_2/yanarhs_f3_analysis2_altai.ind",quote=F,col.names=F,row.names=F)
-#write.table(df1,"analysis_yanarhsf3_2/yanarhs_f3_analysis2_chagyrskaya.ind",quote=F,col.names=F,row.names=F)
-#write.table(df1,"analysis_yanarhsf3_2/yanarhs_f3_analysis2_vindija.ind",quote=F,col.names=F,row.names=F)
-#write.table(df1,"analysis_yanarhsf3_2/yanarhs_f3_analysis2_denisova.ind",quote=F,col.names=F,row.names=F)
-
 out01.geno <- file("analysis_yanarhsf3_2/results/yanarhs_f3_analysis_ch1.mini01.geno","w")
 out01.snp <- file("analysis_yanarhsf3_2/results/yanarhs_f3_analysis_ch1.mini01.snp","w")
 out02.geno <- file("analysis_yanarhsf3_2/results/yanarhs_f3_analysis_ch1.mini02.geno","w")
@@ -86,19 +57,19 @@ for(chrnum in 1){
       v4 <- paste(id,chr,0,pos,ref,alt,sep=" ")
       
       lmd <- sample(c(0:4),1,replace=TRUE)
-      if(r%%5==1){
+      if(lmd%%5==1){
         writeLines(v3, out01.geno, sep="\n")
         writeLines(v4, out01.snp, sep="\n")
       }else{
-        if(r%%5==2){
+        if(lmd%%5==2){
           writeLines(v3, out02.geno, sep="\n")
           writeLines(v4, out02.snp, sep="\n")
         }else{
-          if(r%%5==3){
+          if(rlmd%%5==3){
             writeLines(v3, out03.geno, sep="\n")
             writeLines(v4, out03.snp, sep="\n")
           }else{
-            if(r%%5==4){
+            if(lmd%%5==4){
               writeLines(v3, out04.geno, sep="\n")
               writeLines(v4, out04.snp, sep="\n")
             }else{
