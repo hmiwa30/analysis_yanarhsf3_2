@@ -65,7 +65,7 @@ for(chrnum in 1){
           writeLines(v3, out02.geno, sep="\n")
           writeLines(v4, out02.snp, sep="\n")
         }else{
-          if(rlmd%%5==3){
+          if(lmd%%5==3){
             writeLines(v3, out03.geno, sep="\n")
             writeLines(v4, out03.snp, sep="\n")
           }else{
