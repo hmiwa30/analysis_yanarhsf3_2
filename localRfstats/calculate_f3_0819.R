@@ -40,12 +40,12 @@ prefix = NULL
 my_f2_dir = NULL
 
 prefix = sprintf("%s\\yanarhs_f3_analysis2_ch1.mini01",sdir)
-my_f2_dir = sprintf("%s\\yanarhs_f3_analysis_ch1.mini01",rdir)
+my_f2_dir = sprintf("%s\\yanarhs_f3_analysis2_ch1.mini01",rdir)
 extract_f2(prefix, my_f2_dir)
 
 prefix = NULL
 my_f2_dir = NULL
 
 prefix = sprintf("%s\\yana_j_f3_analysis2_ch1.mini01",sdir)
-my_f2_dir = sprintf("%s\\yana_j_f3_analysis_ch1.mini01",rdir)
+my_f2_dir = sprintf("%s\\yana_j_f3_analysis2_ch1.mini01",rdir)
 extract_f2(prefix, my_f2_dir)
