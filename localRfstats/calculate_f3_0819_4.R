@@ -36,7 +36,7 @@ inds <- read.table(sprintf("%s\\yanarhs_f3_analysis_ch1.mini01_part1.ind",sdir),
 #(pop3 = as.character(lista[-1]))
 (pop3 = as.character(lista[-13]))
 dat.f3=f3(f2_blocks,pop1,pop2,pop3)
-write.table(dat.f3,sprintf("%s\\yana_j_f3_analysis_0819_ch1.mini01_part1.f3_FIN.txt",rdir),quote=F,row.names=F)
+write.table(dat.f3,sprintf("%s\\yanarhs_f3_analysis_0819_ch1.mini01_part1.f3_FIN.txt",rdir),quote=F,row.names=F)
 
 f2_blocks = NULL
 dat.f3 = NULL
@@ -54,7 +54,7 @@ inds <- read.table(sprintf("%s\\yanarhs_f3_analysis_ch1.mini01_part2.ind",sdir),
 #(pop3 = as.character(lista[-1]))
 (pop3 = as.character(lista[-9]))
 dat.f3=f3(f2_blocks,pop1,pop2,pop3)
-write.table(dat.f3,sprintf("%s\\yana_j_f3_analysis_0819_ch1.mini01_part2.f3_FIN.txt",rdir),quote=F,row.names=F)
+write.table(dat.f3,sprintf("%s\\yanarhs_f3_analysis_0819_ch1.mini01_part2.f3_FIN.txt",rdir),quote=F,row.names=F)
 
 f2_blocks = NULL
 dat.f3 = NULL
@@ -72,7 +72,7 @@ inds <- read.table(sprintf("%s\\yanarhs_f3_analysis_ch1.mini01_part3.1.ind",sdir
 #(pop3 = as.character(lista[-1]))
 (pop3 = as.character(lista[-3]))
 dat.f3=f3(f2_blocks,pop1,pop2,pop3)
-write.table(dat.f3,sprintf("%s\\yana_j_f3_analysis_0819_ch1.mini01_part3.1.f3_FIN.txt",rdir),quote=F,row.names=F)
+write.table(dat.f3,sprintf("%s\\yanarhs_f3_analysis_0819_ch1.mini01_part3.1.f3_FIN.txt",rdir),quote=F,row.names=F)
 
 f2_blocks = NULL
 dat.f3 = NULL
@@ -90,7 +90,7 @@ inds <- read.table(sprintf("%s\\yanarhs_f3_analysis_ch1.mini01_part3.2.ind",sdir
 #(pop3 = as.character(lista[-1]))
 (pop3 = as.character(lista[-3]))
 dat.f3=f3(f2_blocks,pop1,pop2,pop3)
-write.table(dat.f3,sprintf("%s\\yana_j_f3_analysis_0819_ch1.mini01_part3.2.f3_FIN.txt",rdir),quote=F,row.names=F)
+write.table(dat.f3,sprintf("%s\\yanarhs_f3_analysis_0819_ch1.mini01_part3.2.f3_FIN.txt",rdir),quote=F,row.names=F)
 
 f2_blocks = NULL
 dat.f3 = NULL
@@ -108,4 +108,4 @@ inds <- read.table(sprintf("%s\\yanarhs_f3_analysis_ch1.mini01_part4.ind",sdir),
 #(pop3 = as.character(lista[-1]))
 (pop3 = as.character(lista[-3]))
 dat.f3=f3(f2_blocks,pop1,pop2,pop3)
-write.table(dat.f3,sprintf("%s\\yana_j_f3_analysis_0819_ch1.mini01_part4.f3_FIN.txt",rdir),quote=F,row.names=F)
+write.table(dat.f3,sprintf("%s\\yanarhs_f3_analysis_0819_ch1.mini01_part4.f3_FIN.txt",rdir),quote=F,row.names=F)
