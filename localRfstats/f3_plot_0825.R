@@ -24,7 +24,7 @@ for(i in c(3,4)){
   if(i==3){
     ( filename <- sprintf("%s_%s_part%s.1.f3_FIN.txt",ft_fix,ah,i) ) #part3 or 4
     resultf3 <- rbind(resultf3,read.table(filename,header=T))
-    resultf3 <- resultf3[-which(resultf3$pop3 %in% c("FIN","JPT","CHB","GBR")),]
+    resultf3 <- resultf3[-which(resultf3$pop3 %in% c("FIN","JPT","CHB","GBR","NEO242")),]
     ( filename <- sprintf("%s_%s_part%s.2.f3_FIN.txt",ft_fix,ah,i) ) #part3 or 4
     resultf3 <- rbind(resultf3,read.table(filename,header=T))
   }else{
