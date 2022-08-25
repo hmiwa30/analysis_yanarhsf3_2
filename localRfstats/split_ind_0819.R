@@ -7,6 +7,7 @@ ldir="G:\\hmiwa\\m_20211215\\07_yana_saami3\\git\\analysis_yanarhsf3_2"
 #split ind####
 
 (series <- "yanarhs_f3_analysis_ch1.mini01")
+(series2 <- "yanarhs_f3_analysis2_ch1.mini01")
 
 df <- read.table(sprintf("%s/%s.ind",sdir,series),header=F)
 
@@ -35,7 +36,7 @@ write.table(t(x1),sprintf("%s/%s_part1.txt",sdir,series),sep=",",quote=F,row.nam
 write.table(t(x2),sprintf("%s/%s_part2.txt",sdir,series),sep=",",quote=F,row.names=F,col.names=F)
 write.table(t(x3),sprintf("%s/%s_part3.txt",sdir,series),sep=",",quote=F,row.names=F,col.names=F)
 
-df <- read.table(sprintf("%s/%s2.ind",sdir,series),header=F)
+df <- read.table(sprintf("%s/%s.ind",sdir,series2),header=F)
 n4 <- c("FIN","YRI","JPT","CHB","GBR")
 (other <- unique(df$V3)[-which(unique(df$V3) %in% c("FIN","YRI","JPT","CHB","GBR"))])
 (n4 <- append(n4,as.character(other[22:length(other)])))
@@ -48,6 +49,7 @@ write.table(t(x4),sprintf("%s/%s_part4.txt",sdir,series),sep=",",quote=F,row.nam
 #split ind####
 
 (series <- "yana_j_f3_analysis_ch1.mini01")
+(series2 <- "yana_j_f3_analysis2_ch1.mini01")
 
 df <- read.table(sprintf("%s/%s.ind",sdir,series),header=F)
 
@@ -76,7 +78,7 @@ write.table(t(x1),sprintf("%s/%s_part1.txt",sdir,series),sep=",",quote=F,row.nam
 write.table(t(x2),sprintf("%s/%s_part2.txt",sdir,series),sep=",",quote=F,row.names=F,col.names=F)
 write.table(t(x3),sprintf("%s/%s_part3.txt",sdir,series),sep=",",quote=F,row.names=F,col.names=F)
 
-df <- read.table(sprintf("%s/%s2.ind",sdir,series),header=F)
+df <- read.table(sprintf("%s/%s.ind",sdir,series2),header=F)
 n4 <- c("FIN","YRI","JPT","CHB","GBR")
 (other <- unique(df$V3)[-which(unique(df$V3) %in% c("FIN","YRI","JPT","CHB","GBR"))])
 (n4 <- append(n4,as.character(other[22:length(other)])))
